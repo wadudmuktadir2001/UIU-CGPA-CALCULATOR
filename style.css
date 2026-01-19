@@ -5,8 +5,19 @@
 
 body {
     margin: 0;
-    background: linear-gradient(135deg, #020617, #0f766e);
+    min-height: 100vh;
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
     color: white;
+}
+
+/* dark overlay */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.75);
+    z-index: -1;
 }
 
 .app {
@@ -116,16 +127,16 @@ input {
     padding-left: 18px;
 }
 
-@media (max-width: 768px) {
-    .bottom {
-        grid-template-columns: 1fr;
-    }
-}
-
 .footer {
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
     color: #cbd5f5;
     opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .bottom {
+        grid-template-columns: 1fr;
+    }
 }
