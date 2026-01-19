@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #020617, #0f766e);
+    color: white;
+}
+
+.app {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 15px 60px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.top-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    color: white;
+}
+
+.add {
+    background: #1e293b;
+}
+
+.reset {
+    background: #7c2d12;
+}
+
+.calc {
+    margin-top: 15px;
+    width: 100%;
+    background: linear-gradient(90deg, #2563eb, #22c55e);
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    color: #cbd5f5;
+    font-size: 14px;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
+}
+
+input {
+    width: 70px;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.badge {
+    background: #1e293b;
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+.remove {
+    background: #dc2626;
+    padding: 6px 10px;
+    border-radius: 999px;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.result,
+.policy {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.result h2 {
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.policy ul {
+    padding-left: 18px;
+}
+
+@media (max-width: 768px) {
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #cbd5f5;
+    opacity: 0.8;
+}
